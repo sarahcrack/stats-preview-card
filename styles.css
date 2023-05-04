@@ -1,0 +1,54 @@
+body {
+  background-color: #010102;
+  color: white;
+}
+
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1938;
+  margin: 200px 100px;
+  padding: 100px 100px;
+}
+
+.text {
+  flex-basis: 50%;
+  padding: 2rem;
+}
+
+.image {
+  flex-basis: 50%;
+}
+
+#insights {
+  color: #9161bc;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* @media (max-width: 768px) {
+  .text,
+  .image {
+    flex-basis: 100%;
+  }
+} */
+
+/* 
+In this code, we set the display property of the container to flex and set the flex-basis of the text and image containers to 50%. We also add padding to the text container to create some space between the text and the edge of the container.
+The justify-content and align-items properties are used to center the content horizontally and vertically within the container.
+Finally, we add a media query to adjust the layout for smaller screens. When the screen width is less than or equal to 768 pixels, we change the flex-direction property of the container to column, so the text and image containers stack vertically. We also set the flex-basis of the text and image containers to 100% to make them take up the full width of the container.
+ */
